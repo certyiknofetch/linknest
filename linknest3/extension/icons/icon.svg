@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="24" fill="url(#bg)"/>
+  <g transform="translate(64,60)">
+    <!-- Bookmark shape -->
+    <path d="M-20,-30 L-20,25 L0,12 L20,25 L20,-30 Z" fill="white" opacity="0.95"/>
+    <!-- Sync arrows -->
+    <g transform="translate(0,10)" fill="none" stroke="white" stroke-width="3" stroke-linecap="round">
+      <path d="M-18,18 A22,22 0 0,1 18,18" />
+      <polyline points="14,12 18,18 12,22"/>
+      <path d="M18,28 A22,22 0 0,1 -18,28" />
+      <polyline points="-14,34 -18,28 -12,24"/>
+    </g>
+  </g>
+</svg>
