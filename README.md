@@ -185,7 +185,7 @@ openssl rand -base64 32   # TWO_FACTOR_ENCRYPTION_KEY
 
 ### Chromium Browsers (Chrome, Edge, Brave, Opera, Vivaldi)
 
-1. Go to https://chromewebstore.google.com/is-published-under-review
+1. Go to https://chromewebstore.google.com/is-published-under-review   (Will add soon)
 2. Download or build `linknest-chromium.zip`
 3. Extract to a folder
 4. Open `chrome://extensions/` (or `edge://extensions/`, etc.)
@@ -196,7 +196,7 @@ openssl rand -base64 32   # TWO_FACTOR_ENCRYPTION_KEY
 
 ### Firefox
 
-1. Go to https://addons.mozilla.org/en-US/firefox/addon/is-published-under-review
+1. Go to https://addons.mozilla.org/en-US/firefox/addon/is-published-under-review   (Will add soon)
 2. Download or build `linknest-firefox.zip`
 3. Extract to a folder
 4. Open `about:debugging#/runtime/this-firefox`
