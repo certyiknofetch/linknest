@@ -1,0 +1,52 @@
+DB_PROVIDER=mongodb
+PORT=3000
+
+# MongoDB (used when DB_PROVIDER=mongodb)
+MONGODB_URI=mongodb://localhost:27017/linknest
+
+# PostgreSQL (used when DB_PROVIDER=postgres)
+# Local example:
+POSTGRES_URL=postgresql://postgres:postgres@localhost:5432/linknest
+# Remote DB server with IP + password (recommended):
+# POSTGRES_URL=postgresql://db_user:db_password@192.168.1.50:5432/linknest
+# Remote DB server with IP and no password (only if DB server is configured for trust/no-auth; NOT recommended):
+# POSTGRES_URL=postgresql://db_user@192.168.1.50:5432/linknest
+# For production with managed Postgres, prefer SSL=true
+POSTGRES_SSL=false
+POSTGRES_SSL_REJECT_UNAUTHORIZED=false
+
+# Authentication & token security
+JWT_SECRET=your-super-secret-key-change-this-in-production
+ACCESS_JWT_EXPIRES_IN=15m
+REFRESH_JWT_SECRET=your-refresh-secret-change-this-in-production
+REFRESH_JWT_EXPIRES_IN=30d
+TWO_FACTOR_CHALLENGE_SECRET=your-2fa-challenge-secret
+TWO_FACTOR_CHALLENGE_EXPIRES_IN=5m
+TWO_FACTOR_ENCRYPTION_KEY=your-32-byte-minimum-strong-secret
+
+# Transport security
+REQUIRE_HTTPS=true
+CORS_ORIGINS=https://your-app.example.com
+
+#################################################################
+#                       For Docker env                          #
+#################################################################
+
+# ── Database ──────────────────────────────────────────────
+POSTGRES_PASSWORD=your-strong-db-password-here
+
+# ── Server ────────────────────────────────────────────────
+PORT=3000
+REQUIRE_HTTPS=true
+CORS_ORIGINS=https://testapp.yourdomain.com
+
+# ── JWT ───────────────────────────────────────────────────
+JWT_SECRET=generate-a-random-64-char-string
+ACCESS_JWT_EXPIRES_IN=15m
+REFRESH_JWT_SECRET=generate-a-different-random-64-char-string
+REFRESH_JWT_EXPIRES_IN=30d
+
+# ── 2FA / TOTP ───────────────────────────────────────────
+TWO_FACTOR_ENCRYPTION_KEY=exactly-32-characters-hex-key!!
+TWO_FACTOR_CHALLENGE_SECRET=generate-another-random-string
+TWO_FACTOR_CHALLENGE_EXPIRES_IN=5m
