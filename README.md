@@ -185,22 +185,24 @@ openssl rand -base64 32   # TWO_FACTOR_ENCRYPTION_KEY
 
 ### Chromium Browsers (Chrome, Edge, Brave, Opera, Vivaldi)
 
-1. Download or build `linknest-chromium.zip`
-2. Extract to a folder
-3. Open `chrome://extensions/` (or `edge://extensions/`, etc.)
-4. Enable **Developer Mode**
-5. Click **Load unpacked** → select the extracted folder
-6. Click the LinkNest icon → go to **Settings** → set your server URL
-7. Register or login
+1. Go to https://chromewebstore.google.com/is-published-under-review
+2. Download or build `linknest-chromium.zip`
+3. Extract to a folder
+4. Open `chrome://extensions/` (or `edge://extensions/`, etc.)
+5. Enable **Developer Mode**
+6. Click **Load unpacked** → select the extracted folder
+7. Click the LinkNest icon → go to **Settings** → set your server URL
+8. Register or login
 
 ### Firefox
 
-1. Download or build `linknest-firefox.zip`
-2. Extract to a folder
-3. Open `about:debugging#/runtime/this-firefox`
-4. Click **Load Temporary Add-on** → select `manifest.json` from the extracted folder
-5. Click the LinkNest icon → go to **Settings** → set your server URL
-6. Register or login
+1. Go to https://addons.mozilla.org/en-US/firefox/addon/is-published-under-review
+2. Download or build `linknest-firefox.zip`
+3. Extract to a folder
+4. Open `about:debugging#/runtime/this-firefox`
+5. Click **Load Temporary Add-on** → select `manifest.json` from the extracted folder
+6. Click the LinkNest icon → go to **Settings** → set your server URL
+7. Register or login
 
 > **Note:** Firefox temporary add-ons are removed on restart. For permanent installation, use `about:addons` with a signed `.xpi` file or use Firefox Developer Edition with `xpinstall.signatures.required` set to `false`.
 
