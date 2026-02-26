@@ -1,6 +1,11 @@
 # LinkNest — Cross-Browser Bookmark Sync
 
 <p align="center">
+  <img src="icon128.png" width="300">
+</p>
+
+
+<p align="center">
   <strong>Sync your bookmarks across Chrome, Firefox, Edge, Brave.</strong><br />
   Self-hosted server · Browser extension · PostgreSQL / MongoDB
 </p>
