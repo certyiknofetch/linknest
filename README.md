@@ -1,7 +1,7 @@
 # LinkNest — Cross-Browser Bookmark Sync
 
 <p align="center">
-  <img src="icon128.png" width="100">
+  <img src="icon128.png" width="190">
 </p>
 
 
