@@ -1,0 +1,21 @@
+# ── LinkNest: Server only (external database) ────────────────
+# Use this when you already have a PostgreSQL or MongoDB server.
+# Usage:
+#   cp .env.example .env   # edit secrets + DB connection
+#   docker compose -f docker-compose.no-db.yml up -d
+# ──────────────────────────────────────────────────────────────
+
+services:
+  linknest:
+    image: certyiknofetch/linknest:1.1
+    container_name: linknest-server
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file: .env
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

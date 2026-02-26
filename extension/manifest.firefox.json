@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "LinkNest - Cross-Browser Bookmark Sync",
+  "version": "1.1.0",
+  "description": "Sync your bookmarks seamlessly across Chrome, Firefox, Edge, Brave & more. Login once, sync everywhere.",
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "alarms",
+    "identity",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "scripts": ["background/background.js"],
+    "persistent": false
+  },
+  "content_security_policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https: http://localhost:* http://127.0.0.1:*; object-src 'self';",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "linknest@example.com",
+      "strict_min_version": "109.0"
+    }
+  }
+}

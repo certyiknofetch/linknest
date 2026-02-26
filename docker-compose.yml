@@ -1,0 +1,47 @@
+# ── LinkNest: Server + PostgreSQL ─────────────────────────────
+# Full stack with bundled database
+# Usage:
+#   cp .env.example .env   # edit secrets
+#   docker compose up -d
+# ──────────────────────────────────────────────────────────────
+
+services:
+  linknest:
+    image: certyiknofetch/linknest:1.1
+    container_name: linknest-server
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file: .env
+    environment:
+      - DB_PROVIDER=postgres
+      - POSTGRES_URL=postgresql://linknest:${POSTGRES_PASSWORD:-changeme}@db:5432/linknest
+      - POSTGRES_SSL=false
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+  db:
+    image: postgres:16-alpine
+    container_name: linknest-db
+    restart: unless-stopped
+    volumes:
+      - linknest_pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: linknest
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      POSTGRES_DB: linknest
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U linknest -d linknest"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  linknest_pgdata:
