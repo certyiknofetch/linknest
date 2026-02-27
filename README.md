@@ -15,10 +15,6 @@
 [![Pulls](https://img.shields.io/docker/pulls/certyiknofetch/linknest?label=pulls&style=for-the-badge&logo=docker&logoColor=white&color=2496ED)](https://hub.docker.com/r/certyiknofetch/linknest)
 [![Stars](https://img.shields.io/docker/stars/certyiknofetch/linknest?label=stars&style=for-the-badge&logo=docker&logoColor=white&color=2496ED)](https://hub.docker.com/r/certyiknofetch/linknest)
 
-<p align="center">
-  <img src="https://raw.imdora.in/file/attachments/dvv4CWS8qj8Vc9deNv98Z8/linknest.png" width="100"/>
-</p>
-
 ---
 
 # LinkNest — Cross-Browser Bookmark Sync
