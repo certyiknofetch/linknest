@@ -1,28 +1,19 @@
+<div align="center">
+
+<img src="https://raw.imdora.in/file/attachments/dvv4CWS8qj8Vc9deNv98Z8/linknest.png" width="120"/>
+
 # LinkNest — Cross-Browser Bookmark Sync
 
-<p align="center">
-  <img src="icon128.png" width="170">
-</p>
+**Sync your bookmarks across Chrome, Firefox, Edge, Brave.**  
+Self-hosted server · Browser extension · PostgreSQL / MongoDB
 
-
-<p align="center">
-  <strong>Sync your bookmarks across Chrome, Firefox, Edge, Brave.</strong><br />
-  Self-hosted server · Browser extension · PostgreSQL / MongoDB
-</p>
-
+[![GitHub Stars](https://img.shields.io/github/stars/certyiknofetch/linknest?style=for-the-badge&logo=github&logoColor=white&color=yellow)](https://github.com/certyiknofetch/linknest/stargazers)
+[![License](https://img.shields.io/github/license/certyiknofetch/linknest?style=for-the-badge&logo=opensourceinitiative&logoColor=white&color=blue)](https://github.com/certyiknofetch/linknest/blob/main/LICENSE)
 [![Version](https://img.shields.io/docker/v/certyiknofetch/linknest?sort=semver&label=version&style=for-the-badge&logo=docker&logoColor=white&color=2496ED)](https://hub.docker.com/r/certyiknofetch/linknest)
 [![Size](https://img.shields.io/docker/image-size/certyiknofetch/linknest/latest?label=size&style=for-the-badge&logo=docker&logoColor=white&color=2496ED)](https://hub.docker.com/r/certyiknofetch/linknest)
 [![Pulls](https://img.shields.io/docker/pulls/certyiknofetch/linknest?label=pulls&style=for-the-badge&logo=docker&logoColor=white&color=2496ED)](https://hub.docker.com/r/certyiknofetch/linknest)
-[![Stars](https://img.shields.io/docker/stars/certyiknofetch/linknest?label=stars&style=for-the-badge&logo=docker&logoColor=white&color=2496ED)](https://hub.docker.com/r/certyiknofetch/linknest)
 
----
-
-# LinkNest — Cross-Browser Bookmark Sync
-
-<p align="center">
-  <strong>Sync your bookmarks across Chrome, Firefox, Edge, Brave.</strong><br />
-  Self-hosted server · Browser extension · PostgreSQL / MongoDB
-</p>
+</div>
 
 ---
 
@@ -206,8 +197,8 @@ openssl rand -base64 32   # TWO_FACTOR_ENCRYPTION_KEY
 
 ### Firefox
 
-1. Download from [HERE](https://github.com/certyiknofetch/linknest/blob/main/extension/linknest-firefox.zip) or build `linknest-firefox.zip`
-2. Extract to a folder
+1. Download or build `linknest-firefox.zip`
+2. Extract [HERE](https://github.com/certyiknofetch/linknest/blob/main/extension/linknest-firefox.zip)to a folder
 3. Open `about:debugging#/runtime/this-firefox`
 4. Click **Load Temporary Add-on** → select `manifest.json` from the extracted folder
 5. Click the LinkNest icon → go to **Settings** → set your server URL
