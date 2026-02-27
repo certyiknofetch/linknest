@@ -10,6 +10,25 @@
   Self-hosted server · Browser extension · PostgreSQL / MongoDB
 </p>
 
+[![Version](https://img.shields.io/docker/v/certyiknofetch/linknest?sort=semver&label=version&style=for-the-badge&logo=docker&logoColor=white&color=2496ED)](https://hub.docker.com/r/certyiknofetch/linknest)
+[![Size](https://img.shields.io/docker/image-size/certyiknofetch/linknest/latest?label=size&style=for-the-badge&logo=docker&logoColor=white&color=2496ED)](https://hub.docker.com/r/certyiknofetch/linknest)
+[![Pulls](https://img.shields.io/docker/pulls/certyiknofetch/linknest?label=pulls&style=for-the-badge&logo=docker&logoColor=white&color=2496ED)](https://hub.docker.com/r/certyiknofetch/linknest)
+[![Stars](https://img.shields.io/docker/stars/certyiknofetch/linknest?label=stars&style=for-the-badge&logo=docker&logoColor=white&color=2496ED)](https://hub.docker.com/r/certyiknofetch/linknest)
+
+<p align="center">
+  <img src="https://raw.imdora.in/file/attachments/dvv4CWS8qj8Vc9deNv98Z8/linknest.png" width="100"/>
+</p>
+
+---
+
+# LinkNest — Cross-Browser Bookmark Sync
+# License - https://github.com/certyiknofetch/linknest/blob/main/LICENSE
+
+<p align="center">
+  <strong>Sync your bookmarks across Chrome, Firefox, Edge, Brave.</strong><br />
+  Self-hosted server · Browser extension · PostgreSQL / MongoDB
+</p>
+
 ---
 
 ## Table of Contents
@@ -21,12 +40,9 @@
 - [Environment Variables](#environment-variables)
 - [Extension Setup](#extension-setup)
 - [Reverse Proxy (Nginx Proxy Manager)](#reverse-proxy-nginx-proxy-manager)
-- [Security](#security)
-- [Troubleshooting](#troubleshooting)
 - [License](#license)
 
 ---
-
 
 ## Features
 
@@ -185,24 +201,22 @@ openssl rand -base64 32   # TWO_FACTOR_ENCRYPTION_KEY
 
 ### Chromium Browsers (Chrome, Edge, Brave, Opera, Vivaldi)
 
-1. Go to https://chromewebstore.google.com/is-published-under-review   (Will add soon)
-2. Download or build `linknest-chromium.zip`
-3. Extract to a folder
-4. Open `chrome://extensions/` (or `edge://extensions/`, etc.)
-5. Enable **Developer Mode**
-6. Click **Load unpacked** → select the extracted folder
-7. Click the LinkNest icon → go to **Settings** → set your server URL
-8. Register or login
+1. Download from [HERE](https://github.com/certyiknofetch/linknest/blob/main/extension/linknest-chrome.zip) or build `linknest-chrome.zip`
+2. Extract to a folder
+3. Open `chrome://extensions/` (or `edge://extensions/`, etc.)
+4. Enable **Developer Mode**
+5. Click **Load unpacked** → select the extracted folder
+6. Click the LinkNest icon → go to **Settings** → set your server URL
+7. Register or login
 
 ### Firefox
 
-1. Go to https://addons.mozilla.org/en-US/firefox/addon/is-published-under-review   (Will add soon)
-2. Download or build `linknest-firefox.zip`
-3. Extract to a folder
-4. Open `about:debugging#/runtime/this-firefox`
-5. Click **Load Temporary Add-on** → select `manifest.json` from the extracted folder
-6. Click the LinkNest icon → go to **Settings** → set your server URL
-7. Register or login
+1. Download or build `linknest-firefox.zip`
+2. Extract [HERE](https://github.com/certyiknofetch/linknest/blob/main/extension/linknest-firefox.zip)to a folder
+3. Open `about:debugging#/runtime/this-firefox`
+4. Click **Load Temporary Add-on** → select `manifest.json` from the extracted folder
+5. Click the LinkNest icon → go to **Settings** → set your server URL
+6. Register or login
 
 > **Note:** Firefox temporary add-ons are removed on restart. For permanent installation, use `about:addons` with a signed `.xpi` file or use Firefox Developer Edition with `xpinstall.signatures.required` set to `false`.
 
@@ -241,5 +255,11 @@ Set in `.env`:
 CORS_ORIGINS=https://linknest.yourdomain.com
 REQUIRE_HTTPS=true
 ```
+
+## License
+
+This project is open source and available under the terms specified in the [LICENSE](https://github.com/certyiknofetch/linknest/blob/main/LICENSE) file.
+
+For contributions, usage rights, and restrictions, please refer to the full license text in the repository.
 
 ---
