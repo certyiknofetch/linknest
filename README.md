@@ -18,7 +18,6 @@
 ---
 
 # LinkNest — Cross-Browser Bookmark Sync
-# License - https://github.com/certyiknofetch/linknest/blob/main/LICENSE
 
 <p align="center">
   <strong>Sync your bookmarks across Chrome, Firefox, Edge, Brave.</strong><br />
