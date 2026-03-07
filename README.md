@@ -187,7 +187,7 @@ openssl rand -base64 32   # TWO_FACTOR_ENCRYPTION_KEY
 
 ### Chromium Browsers (Chrome, Edge, Brave, Opera, Vivaldi)
 
-1. Download from [HERE](https://github.com/certyiknofetch/linknest/blob/main/extension/linknest-chrome.zip) or build `linknest-chrome.zip`
+1. Download from [HERE](https://chromewebstore.google.com/detail/linknest-cross-browser-bo/fdgdngoejembedbedpaajhgldiffmiee) or [HERE](https://github.com/certyiknofetch/linknest/blob/main/extension/linknest-chrome.zip) or build `linknest-chrome.zip`
 2. Extract to a folder
 3. Open `chrome://extensions/` (or `edge://extensions/`, etc.)
 4. Enable **Developer Mode**
@@ -197,7 +197,7 @@ openssl rand -base64 32   # TWO_FACTOR_ENCRYPTION_KEY
 
 ### Firefox
 
-1. Download from [HERE](https://github.com/certyiknofetch/linknest/blob/main/extension/linknest-firefox.zip) or build `linknest-firefox.zip`
+1. Download from [HERE](https://addons.mozilla.org/addon/linknest) or [HERE](https://github.com/certyiknofetch/linknest/blob/main/extension/linknest-firefox.zip) or build `linknest-firefox.zip`
 2. Extract to a folder
 3. Open `about:debugging#/runtime/this-firefox`
 4. Click **Load Temporary Add-on** → select `manifest.json` from the extracted folder
